@@ -1,0 +1,23 @@
+---
+/**
+  A module to dynamically load images from the file system.
+
+  Taken from here: https://docs.astro.build/en/recipes/dynamically-importing-images/ 
+
+  Images are expected to be in /src/assets
+*/
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+   imagePath: string;
+   altText: string;
+   imageWidth?: number;
+   imageHeight?: number;
+}
+
+const { imagePath, altText, imageWidth, imageHeight, ...rest } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+---
+{imagePath && <Image width={imageWidth} height={imageHeight} src={images[imagePath]()} alt={altText} {...rest} />}
