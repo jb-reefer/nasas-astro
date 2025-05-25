@@ -3,7 +3,6 @@ const today = new Date();
 ---
 
 <footer>
-	<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0 - Neighbors for a Safer Austin Street</a>
 	<div class="social-links">
 		<a href="https://m.webtoo.ls/@astro" target="_blank">
 			<img src="/src/assets/icons/mastodon.svg" width="32" height="32" alt="Follow Astro on Mastodon" />
@@ -15,6 +14,7 @@ const today = new Date();
 			<img src="/src/assets/icons/instagram.svg" width="32" height="32" alt="Follow NASAS on Instagram" />
 		</a>
 	</div>
+	<a class="cc-by" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0 - Neighbors for a Safer Austin Street</a>
 </footer>
 <style>
 	footer {
@@ -35,5 +35,9 @@ const today = new Date();
 	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
+	}
+	.cc-by {
+		margin-top: 2rem;
+		display: block;
 	}
 </style>
