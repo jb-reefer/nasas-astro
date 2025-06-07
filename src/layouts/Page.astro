@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Analytics from '@vercel/analytics/astro';
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 const { title } = Astro.props;
 ---
@@ -45,6 +46,7 @@ const { title } = Astro.props;
 	<body>
 		<Header />
 		<Analytics />
+		<SpeedInsights />
 		<main>
 			<article>
 				<div class="prose">
