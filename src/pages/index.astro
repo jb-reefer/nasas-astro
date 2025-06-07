@@ -1,9 +1,34 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../consts";
 ---
+<style>
+	.homescreen {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 2rem;
+	}
+	button {
+		height: 4rem;
+		width: 20rem;
+		font-size: 1rem;
+		background-color: var(--accent);
+		color: white;
+		border: none;
+		padding: 1em 2em;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 0.2s ease;
+	}
+	button:hover {
+		background-color: var(--accent-dark);
+	}
+</style>
 
 <!doctype html>
 <html lang="en">
@@ -13,26 +38,16 @@ import { SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>Open Austin Street Proposal</h1>
-			<p>
-				The Open Austin Street Proposal, a project by Neighbors for A Safer Austin Street, proposes to turn a block on Austin Street, from 71st Ave to 71st Rd, into a vibrant plaza on weekends, from July until October.
-			</p>
-			<p>
-				The Open Street will transform one of Austin Street's segments with the narrowest sidewalks into a temporary plaza, allowing shoppers, commuters, and everyone else to move more comfortably through the core.
-			</p>
-			<p>
-				The Open Street will be equipped with tables and chairs, providing a comfortable resting place for shoppers and residents. This will encourage people to spend more time in the area, leading to increased shopping and a boost to the local economy. The added seating will also benefit small businesses that do not have much seating.
-			</p>
-			<p>
-				The Open Street will also help traffic by removing through traffic on the eastern end of Austin Street, leading to a more pleasant, calmer commercial core overall.
-			</p>
-			<p>
-				Finally, the Open Austin Street will serve as a community space for a variety of events, such as music, art, clothes swaps, and more. These events will not only attract more people to the Austin Street core but also foster a sense of community without adding competition to the local businesses.
-			</p>
-			<p>This will is not a street fair, but a pleasant strolling and community gathering space. This would not introduce competition to the local businesses, and instead would benefit them by attracting more foot traffic to their doors.</p>
-			<p>
-				The Open Austin Street Proposal is currently in the planning stages and is expected to be implemented in the fall of 2025.
-			</p>		
+			<div class="homescreen">
+				<h1>Support the Austin Street Open Street Application!</h1>
+
+				<a href="https://forms.gle/DZS9F5819pTyNYqv9" target="_blank">
+					<button> Sign the Letter of Support </button>
+				</a>
+
+				<p>Neighbors for Safer Austin Street advocates for a safer, better, more sustainable and more pedestrian-focused Austin Street in Forest Hills</p>
+
+			</div>
 		</main>
 		<Footer />
 	</body>
