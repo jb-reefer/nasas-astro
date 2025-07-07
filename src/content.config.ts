@@ -12,6 +12,10 @@ const news = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+    // Define the slug of the site. If not provided, it will use the post id (the file name).
+    slug: z.string().optional(),
+    // Indicates if the news item should be published. If false, it won't be displayed on the site.
+    isPublished: z.boolean().default(true),
 	}),
 });
 

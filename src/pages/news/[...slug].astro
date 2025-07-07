@@ -5,8 +5,10 @@ import { render } from 'astro:content';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('news');
-	return posts.map((post) => ({
-		params: { slug: post.id },
+  return posts.filter(
+    (post) => post.data.isPublished
+  ).map((post) => ({
+    params: { slug: post.data.slug || post.id },
 		props: post,
 	}));
 }
