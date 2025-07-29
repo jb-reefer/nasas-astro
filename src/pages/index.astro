@@ -3,6 +3,9 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
+import ImagePath from "../components/ImagePath.astro";
+
+const flyer = '/src/assets/ASOS_trial_flyer.png';
 ---
 <style>
 	.homescreen {
@@ -39,14 +42,21 @@ import { SITE_TITLE } from "../consts";
 		<Header />
 		<main>
 			<div class="homescreen">
-				<h1>Support the Austin Street Open Street Application!</h1>
+				<h1>Austin Street Open Street (pop-up!)</h1>
 
-				<a href="https://forms.gle/DZS9F5819pTyNYqv9" target="_blank">
-					<button> Sign the Letter of Support </button>
+        <ImagePath width={600} height={400} imagePath={flyer} altText="Austin Street Open Street" />
+
+        <p>
+        Neighbors for A Safer Austin Street is hosting a pop-up Open Street on Austin Street in Forest Hills, Queens on Sunday, September 14th from 11am to 4pm.
+        This one-time event will convert the block on Austin Street, from 71st Ave to 71st Rd, into a temporary plaza with seats, tables and events!
+        </p>
+
+        <span>Want to stay up to date on our efforts?</span> 
+				<a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">
+					<button> Sign up for our mailing list! </button>
 				</a>
 
-        <p>Neighbors for Safer Austin Street is a volunteer-led, local advocacy organization advocating for a safer, better, more sustainable, vibrant, and pedestrian-friendly Austin Street in Forest Hills</p>
-
+        <i><p>Neighbors for Safer Austin Street is a volunteer-led, local advocacy organization advocating for a safer, better, more sustainable, vibrant, and pedestrian-friendly Austin Street in Forest Hills</p></i>
 			</div>
 		</main>
 		<Footer />
