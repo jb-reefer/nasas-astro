@@ -5,7 +5,8 @@ import Footer from '../components/Footer.astro';
 import Analytics from '@vercel/analytics/astro';
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 
-const { title } = Astro.props;
+// DESNOTE(2025-09-04, pjrt): This allows to render any page and any markdown file with this layout.
+const title = Astro.props.title || Astro.props.frontmatter.title;
 ---
 
 <html lang="en">
