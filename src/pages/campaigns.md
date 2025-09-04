@@ -5,7 +5,7 @@ title: History and Campaigns
 
 - 2022
   - A handwritten and an [online petition](https://www.change.org/ASaferAustinStreet) have been started.
-  - NASAS starts doing street canvassing and collects over 1000 signatures.
+  - Neighbors for A Safer Austin Street (NASAS) starts doing street canvassing and collects over 1000 signatures.
   - A business petition is also started, gathering over 20 signatures.
 - 2023
   - NASAS presents to the Queens Community Board 6 Transportation Committee, and they request that DOT look into it.
@@ -15,7 +15,7 @@ title: History and Campaigns
   - A year goes by, and DOT does nothing.
 - 2025
   - Tired of waiting, NASAS starts an application for an Open Street on Austin Street.
-  - The application is denied, with vague reasoning. But the city grants us a one-day permit for the [Austin Day Open Street trial](#Austin Day Open Street trial)
+  - The application is denied, with vague reasoning. But the city grants us a one-day permit for the [Austin Day Open Street trial](#austin-day-open-street-trial)
   - In the summer, the MTA removes the Q23 from Austin Street.
 
 ## A Safer Austin Street
