@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
 import ImagePath from "../components/ImagePath.astro";
+import { Vimeo } from 'astro-embed';
 
 const flyer = '/src/assets/ASOS_trial_flyer.png';
 ---
@@ -42,14 +43,12 @@ const flyer = '/src/assets/ASOS_trial_flyer.png';
 		<Header />
 		<main>
 			<div class="homescreen">
-				<h1>Austin Street Open Street (pop-up!)</h1>
-
-        <ImagePath width={600} height={400} imagePath={flyer} altText="Austin Street Open Street" />
-
         <p>
-        Neighbors for A Safer Austin Street is hosting a pop-up Open Street on Austin Street in Forest Hills, Queens on Sunday, September 14th from 11am to 4pm.
-        This one-time event will convert the block on Austin Street, from 71st Ave to 71st Rd, into a temporary plaza with seats, tables and events!
+        Thank you to everyone who came out to support the Austin Street Open Street event on Sunday, Sept 14th! We had a fantastic turnout and it was wonderful to see so many members of the community enjoying the street in a new way.
+        But we aren't done. While a sliver of Austin Street was safer, better and more vibrant for a few hours, we need permanent changes! Stay tuned, but for now, enjoy this <a href="https://vimeo.com/1118604105">short video by Streetfilms</a> about Austin Day.
         </p>
+
+        <Vimeo id="https://vimeo.com/1118604105?share=copy" />
 
         <span>Want to stay up to date on our efforts?</span> 
 				<a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">
