@@ -16,7 +16,7 @@ Well, fast forward to last weekend, and you can see how wrong all the naysayers 
 
 Before the event officially began, people took advantage of the police barricades during the setup period to walk directly in the center of Austin. The sun was out, but so were Forest Hills/Rego Park residents in their new, albeit temporary plaza. Food delivery workers on their loud mopeds and electric bicycles were largely well-behaved, slowing down and even dismounting to walk across the plaza.
 
-![](public/f1fbf37801a581c0aad9124735707215_MD5.jpg)
+![austin day: 71st ave facing east](../../assets/austin_day_1.jpg)
 
 Businesses like Tacombi and Shake Shack mentioned that they never expected such high activity on a Sunday afternoon. One would expect that all the people who flock to the street fairs would shop at the permanent businesses on Austin. Well, you may be surprised to learn that some businesses actually lose money. Many of the merchants imported by Clearview are not local to the community at all.
 

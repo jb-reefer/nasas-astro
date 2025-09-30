@@ -1,0 +1,37 @@
+---
+layout: ../layouts/Page.astro
+title: FAQs
+---
+### What is Neighbors for A Safer Austin Street?
+
+We are an unincorporated group of neighbors who are tired of the city's inaction regarding pedestrian safety and comfort issues on Austin Street. These issues include:
+
+1. [Narrow, non-ADA sidewalks](src/content/news/2023-08-16 - Mapping Access on Austin Street.md)
+2. Congestion
+3. Over 100 injuries since 2018
+4. Air and noise pollution from idling and honking cars
+5. Lack of public seating
+
+### Unincorporated? So you are not a non-profit?
+
+We are not a "non-profit" as defined by the IRS. But we are also not a for-profit company. 
+
+### What exactly do you do?
+
+We advocate for a safer Austin Street in various ways. You can learn more about our history [here](/campaigns). While our primary goal is a safer Austin Street, we also advocate for street safety around the neighborhood. 
+
+### Are you part of a larger organization?
+
+We are not affiliated with any other organization. However, as a street safety group, we frequently collaborate with various local groups (such as Forest Hills Green Team and Central Queens Micromobility) and citywide organizations (including OpenPlans and Transportation Alternatives).
+
+### I heard you want to close Austin Street completely to cars and have it be pedestrian-only
+
+While this is a very, *very* popular solution within the community, Neighbors for A Safer Austin Street has not pushed for any one proposal, yet. Our goal at the moment is to bring the city into the community so we can talk about what would work. Once the city or the community at large proposes a solution, we may decide to push for a plan. 
+
+### What are you talking about!? "A safer Austin Street!?" Austin Street is already safe! The sidewalks are fine! It is all fine!
+
+![srsly](../assets/straight-face.gif.gif)
+
+### How come you capitalize the "a" in your name? Shouldn't it be "Neighbor for a Safer Austin Street?"
+
+Because "NASAS" is a pronounceable acronym, and it looks better than "NSAS".
