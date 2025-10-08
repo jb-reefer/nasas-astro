@@ -6,7 +6,7 @@ import { SITE_TITLE } from "../consts";
 import ImagePath from "../components/ImagePath.astro";
 import { Vimeo } from 'astro-embed';
 
-const flyer = '/src/assets/ASOS_trial_flyer.png';
+const flyer = '/src/assets/2025_trick_or_streets_flyer.png';
 ---
 <style>
 	.homescreen {
@@ -43,12 +43,7 @@ const flyer = '/src/assets/ASOS_trial_flyer.png';
 		<Header />
 		<main>
 			<div class="homescreen">
-        <p>
-        Thank you to everyone who came out to support the Austin Street Open Street event on Sunday, Sept 14th! We had a fantastic turnout and it was wonderful to see so many members of the community enjoying the street in a new way.
-        But we aren't done. While a sliver of Austin Street was safer, better and more vibrant for a few hours, we need permanent changes! Stay tuned, but for now, enjoy this <a href="https://vimeo.com/1118604105">short video by Streetfilms</a> about Austin Day.
-        </p>
-
-        <Vimeo id="https://vimeo.com/1118604105?share=copy" />
+        <ImagePath width={720} height={360} imagePath={flyer} altText="" />
 
         <span>Want to stay up to date on our efforts?</span> 
 				<a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">

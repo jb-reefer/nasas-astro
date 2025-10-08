@@ -17,6 +17,7 @@ title: History and Campaigns
   - Tired of waiting, NASAS starts an application for an Open Street on Austin Street.
   - The application is denied, with vague reasoning. But the city grants us a one-day permit for the [Austin Day Open Street trial](#austin-day-open-street-trial)
   - In the summer, the MTA removes the Q23 from Austin Street.
+  - Understanding that Halloween day is the most dangerous day of the year for children, NASAS decided to use the experience from the successful Austin Day to bring, for the first time, Trick or Streets to Austin Street.
 
 ## A Safer Austin Street
 
@@ -31,13 +32,3 @@ You can sign our petition for a better, safer Austin Street here: https://www.ch
 After years of inaction from the city, NASAS applied for an Open Street permit; DOT denied it without a clear reason. But we managed to obtain a one-time permit! This trial will allow us to test the idea.
 
 ![ASOS](../assets/ASOS_trial_flyer.png)
-
-## Q23 Bus Changes
-
-In the summer of 2025, the MTA decided to move the Q23 from Austin Street. The community brought up several issues with this move, many related to needing to cross Queens Blvd to access:
-
-1. The LIRR
-2. The 71st Ave elevator
-3. The shops on Austin Street
-
-To better understand the effects of this change, NASAS started [a survey](https://forms.gle/D8TfVbX4kmmUxJGc7) to collect feedback from the community.
