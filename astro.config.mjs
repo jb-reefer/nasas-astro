@@ -6,16 +6,12 @@ import embeds from 'astro-embed/integration';
 
 import vercel from '@astrojs/vercel';
 
-const humanReadableRedirects = {
-  "/AustinDay": "/news/hurray-for-austin-day",
-}
-
-const lowercaseRedirects = Object.fromEntries(
-  Object.entries(humanReadableRedirects).map(([key, value]) => [key.toLowerCase(), value])
-);
-
 // DESNOTE(2025-10-16, pjrt): Redirects only work if you use npm run dev. npm run preview does NOT support redirects.
-const redirects = { ...humanReadableRedirects, ...lowercaseRedirects };
+// Also, in npm run dev, `AustinDay` works but `austinday` does NOT. But in production (vercel), both work (case insensitive).
+const redirects = {
+  "/AustinDay": "/news/hurray-for-austin-day",
+  "/Austin-Day": "/news/hurray-for-austin-day",
+}
 
 // https://astro.build/config
 export default defineConfig({
