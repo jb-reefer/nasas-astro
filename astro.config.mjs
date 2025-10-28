@@ -11,6 +11,7 @@ import vercel from '@astrojs/vercel';
 const redirects = {
   "/AustinDay": "/news/hurray-for-austin-day",
   "/Austin-Day": "/news/hurray-for-austin-day",
+  "/TrickOrStreets2025": "/",
 }
 
 // https://astro.build/config
