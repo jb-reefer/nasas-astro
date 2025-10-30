@@ -31,7 +31,3 @@ While this is a very, *very* popular solution within the community, Neighbors fo
 ### What are you talking about!? "A safer Austin Street!?" Austin Street is already safe! The sidewalks are fine! It is all fine!
 
 ![srsly](../assets/straight-face.gif.gif)
-
-### How come you capitalize the "a" in your name? Shouldn't it be "Neighbor for a Safer Austin Street?"
-
-Because "NASAS" is a pronounceable acronym, and it looks better than "NSAS".
