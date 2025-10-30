@@ -6,7 +6,7 @@ title: FAQs
 
 We are an unincorporated group of neighbors who are tired of the city's inaction regarding pedestrian safety and comfort issues on Austin Street. These issues include:
 
-1. [Narrow, non-ADA sidewalks](src/content/news/2023-08-16 - Mapping Access on Austin Street.md)
+1. [Narrow, non-ADA sidewalks](news/2023-08-16---mapping-access-on-austin-street)
 2. Congestion
 3. Over 100 injuries since 2018
 4. Air and noise pollution from idling and honking cars
