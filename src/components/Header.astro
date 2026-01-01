@@ -19,7 +19,9 @@ import SocialLinks from './SocialLinks.astro';
       <HeaderLink href="/contact">Contact</HeaderLink>
       <HeaderLink href="/FAQs">FAQs</HeaderLink>
 		</div>
-		<SocialLinks />
+		<div class="social-links-wrapper">
+			<SocialLinks />
+		</div>
 	</nav>
 </header>
 <style>
@@ -53,15 +55,11 @@ import SocialLinks from './SocialLinks.astro';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
 	.mobile-logo {
 		display: none;
 	}
 	@media (max-width: 1000px) {
-		.social-links {
+		.social-links-wrapper {
 			display: none;
 		}
 		.desktop-title {
