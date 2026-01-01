@@ -12,18 +12,27 @@ import SocialLinks from './SocialLinks.astro';
 				<img class="mobile-logo" src="/NASAS_logo.png" alt="NASAS Logo" />
 			</a>
 		</h2>
+		<button
+			class="hamburger"
+			aria-expanded="false"
+			aria-label="Toggle menu"
+			onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')"
+		>
+			<img src="/hamburger.svg" width="24" height="24" alt="" />
+		</button>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/news">Articles</HeaderLink>
-      <HeaderLink href="/campaigns">Campaigns</HeaderLink>
-      <HeaderLink href="/contact">Contact</HeaderLink>
-      <HeaderLink href="/FAQs">FAQs</HeaderLink>
+			<HeaderLink href="/news">Articles</HeaderLink>
+			<HeaderLink href="/campaigns">Campaigns</HeaderLink>
+			<HeaderLink href="/contact">Contact</HeaderLink>
+			<HeaderLink href="/FAQs">FAQs</HeaderLink>
 		</div>
 		<div class="social-links-wrapper">
 			<SocialLinks />
 		</div>
 	</nav>
 </header>
+
 <style>
 	header {
 		margin: 0;
@@ -35,7 +44,6 @@ import SocialLinks from './SocialLinks.astro';
 		margin: 0;
 		font-size: 1em;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
@@ -55,10 +63,21 @@ import SocialLinks from './SocialLinks.astro';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
+	.hamburger {
+		display: none;
+		cursor: pointer;
+		background: none;
+		border: none;
+		color: var(--black);
+		padding: 0.5em;
+	}
 	.mobile-logo {
 		display: none;
 	}
-	@media (max-width: 1000px) {
+	@media (max-width: 720px) {
+		.hamburger {
+			display: block;
+		}
 		.social-links-wrapper {
 			display: none;
 		}
@@ -69,6 +88,25 @@ import SocialLinks from './SocialLinks.astro';
 			display: block;
 			height: 4rem;
 			width: auto;
+		}
+		nav {
+			position: relative;
+			flex-wrap: wrap;
+		}
+		.internal-links {
+			display: none;
+			width: 100%;
+			background: white;
+			box-shadow: 0 4px 8px rgba(var(--black), 10%);
+			flex-direction: column;
+		}
+		/* Show menu when hamburger is expanded */
+		nav:has(.hamburger[aria-expanded="true"]) .internal-links {
+			display: flex;
+		}
+		nav a {
+			padding: 1em;
+			border-bottom: 1px solid rgba(var(--gray-light), 50%);
 		}
 	}
 </style>
