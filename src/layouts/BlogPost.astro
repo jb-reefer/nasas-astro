@@ -11,9 +11,9 @@ const { title, pubDate, updatedDate, author } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} />
-		<style>
+  <head>
+    <BaseHead title={title} />
+    <style>
 			main {
 				width: calc(100% - 2em);
 				max-width: 100%;
@@ -51,33 +51,33 @@ const { title, pubDate, updatedDate, author } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
-		</style>
-	</head>
+    </style>
+  </head>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
+  <body>
+    <Header />
+    <main>
+      <article>
+        <div class="prose">
+          <div class="title">
+            <div class="date">
+              <FormattedDate date={pubDate} />
+              {
+                updatedDate && (
+                  <div class="last-updated-on">
 										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<i>By {author}</i>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+                  </div>
+                )
+              }
+            </div>
+            <h1>{title}</h1>
+            <i>By {author}</i>
+            <hr />
+          </div>
+          <slot />
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
 </html>

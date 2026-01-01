@@ -8,7 +8,7 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import ImagePath from '../../components/ImagePath.astro';
 
 const posts = (await getCollection('news')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 ).filter(
   (post) => post.data.isPublished,
 );
@@ -16,9 +16,9 @@ const posts = (await getCollection('news')).sort(
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} />
-		<style>
+  <head>
+    <BaseHead title={SITE_TITLE} />
+    <style>
 			main {
 				width: 960px;
 			}
@@ -69,29 +69,29 @@ const posts = (await getCollection('news')).sort(
 					text-align: center;
 				}
 			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/news/${post.data.slug || post.id}/`}>
-									<ImagePath width={720} height={360} imagePath={post.data.heroImage} altText="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <ul>
+          {
+            posts.map((post) => (
+              <li>
+                <a href={`/news/${post.data.slug || post.id}/`}>
+                  <ImagePath width={720} height={360} imagePath={post.data.heroImage} altText="" />
+                  <h4 class="title">{post.data.title}</h4>
+                  <p class="date">
+                    <FormattedDate date={post.data.pubDate} />
+                  </p>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>

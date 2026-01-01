@@ -5,6 +5,33 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
 import ImagePath from "../components/ImagePath.astro";
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="homescreen">
+
+        <span>Thank you all who helped put together Forest Hills' very first Trick or Streets on Oct 31st.
+          Now stay tuned for more updates! Austin Day and Trick or Streets were great trial, but we're not done
+          until Austin Street is finally comfortable, clean, vibrant and safe!</span>
+
+        <span>Want to stay up to date on our efforts?</span>
+        <a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">
+          <button> Sign up for our mailing list! </button>
+        </a>
+
+        <i><p>Neighbors for Safer Austin Street is a volunteer-led, local advocacy organization advocating for a safer, better, more sustainable, vibrant, and pedestrian-friendly Austin Street in Forest Hills</p></i>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
 <style>
 	.homescreen {
 		display: flex;
@@ -30,29 +57,3 @@ import ImagePath from "../components/ImagePath.astro";
 		background-color: var(--accent-dark);
 	}
 </style>
-
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<div class="homescreen">
-
-        <span>Thank you all who helped put together Forest Hills' very first Trick or Streets on Oct 31st.
-          Now stay tuned for more updates! Austin Day and Trick or Streets were great trial, but we're not done
-          until Austin Street is finally comfortable, clean, vibrant and safe!</span>
-
-        <span>Want to stay up to date on our efforts?</span> 
-				<a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">
-					<button> Sign up for our mailing list! </button>
-				</a>
-
-        <i><p>Neighbors for Safer Austin Street is a volunteer-led, local advocacy organization advocating for a safer, better, more sustainable, vibrant, and pedestrian-friendly Austin Street in Forest Hills</p></i>
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
