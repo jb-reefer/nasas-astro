@@ -5,32 +5,32 @@ import SocialLinks from './SocialLinks.astro';
 ---
 
 <header>
-	<nav>
-		<h2>
-			<a href="/">
-				<span class="desktop-title">{SITE_TITLE}</span>
-				<img class="mobile-logo" src="/NASAS_logo.png" alt="NASAS Logo" />
-			</a>
-		</h2>
-		<button
-			class="hamburger"
-			aria-expanded="false"
-			aria-label="Toggle menu"
-			onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')"
-		>
-			<img src="/hamburger.svg" width="24" height="24" alt="" />
-		</button>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/news">Articles</HeaderLink>
-			<HeaderLink href="/campaigns">Campaigns</HeaderLink>
-			<HeaderLink href="/contact">Contact</HeaderLink>
-			<HeaderLink href="/FAQs">FAQs</HeaderLink>
-		</div>
-		<div class="social-links-wrapper">
-			<SocialLinks />
-		</div>
-	</nav>
+  <nav>
+    <h2>
+      <a href="/">
+        <span class="desktop-title">{SITE_TITLE}</span>
+        <img class="mobile-logo" src="/NASAS_logo.png" alt="NASAS Logo" />
+      </a>
+    </h2>
+    <button
+      class="hamburger"
+      aria-expanded="false"
+      aria-label="Toggle menu"
+      onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')"
+    >
+      <img src="/hamburger.svg" width="24" height="24" alt="" />
+    </button>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/news">Articles</HeaderLink>
+      <HeaderLink href="/campaigns">Campaigns</HeaderLink>
+      <HeaderLink href="/contact">Contact</HeaderLink>
+      <HeaderLink href="/FAQs">FAQs</HeaderLink>
+    </div>
+    <div class="social-links-wrapper">
+      <SocialLinks />
+    </div>
+  </nav>
 </header>
 
 <style>
