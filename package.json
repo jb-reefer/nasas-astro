@@ -1,23 +1,30 @@
 {
-  "name": "",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.0.8",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/vercel": "^8.0.7",
-    "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.2.0",
-    "astro": "^5.3.0",
-    "astro-embed": "^0.9.1",
-    "typescript": "^5.8.3"
-  }
+	"name": "nasas-astro",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/mdx": "^4.0.8",
+		"@astrojs/rss": "^4.0.11",
+		"@astrojs/sitemap": "^3.2.1",
+		"@astrojs/vercel": "^8.0.7",
+		"@vercel/analytics": "^1.5.0",
+		"@vercel/speed-insights": "^1.2.0",
+		"astro": "^5.3.0",
+		"astro-embed": "^0.9.1",
+		"typescript": "^5.8.3"
+	},
+	"devDependencies": {
+		"@typescript-eslint/parser": "^8.51.0",
+		"eslint": "^9.39.2",
+		"eslint-plugin-astro": "^1.5.0"
+	}
 }

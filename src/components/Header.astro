@@ -1,36 +1,38 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import SocialLinks from './SocialLinks.astro';
 ---
 
 <header>
-	<nav>
-		<h2>
-			<a href="/">
-				<span class="desktop-title">{SITE_TITLE}</span>
-				<img class="mobile-logo" src="/NASAS_logo.png" alt="NASAS Logo" />
-			</a>
-		</h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
+  <nav>
+    <h2>
+      <a href="/">
+        <span class="desktop-title">{SITE_TITLE}</span>
+        <img class="mobile-logo" src="/NASAS_logo.png" alt="NASAS Logo" />
+      </a>
+    </h2>
+    <button
+      class="hamburger"
+      aria-expanded="false"
+      aria-label="Toggle menu"
+      onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')"
+    >
+      <img src="/hamburger.svg" width="24" height="24" alt="" />
+    </button>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/news">Articles</HeaderLink>
       <HeaderLink href="/campaigns">Campaigns</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
       <HeaderLink href="/FAQs">FAQs</HeaderLink>
-		</div>
-		<div class="social-links">
-			<a href="https://mastodon.social/@nasas" target="_blank">
-				<img src="/mastodon.svg" width="32" height="32" alt="Follow NASAS on Mastodon" />
-			</a>
-			<a href="https://x.com/ASaferAustinSt" target="_blank">
-				<img src="/twitter.svg" width="32" height="32" alt="Follow NASAS on Twitter" />
-			</a>
-			<a href="https://www.instagram.com/asaferaustinstqns/" target="_blank">
-				<img src="/instagram.svg" width="32" height="32" alt="Follow NASAS on Instagram" />
-			</a>
-		</div>
-	</nav>
+    </div>
+    <div class="social-links-wrapper">
+      <SocialLinks />
+    </div>
+  </nav>
 </header>
+
 <style>
 	header {
 		margin: 0;
@@ -42,7 +44,6 @@ import { SITE_TITLE } from '../consts';
 		margin: 0;
 		font-size: 1em;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
@@ -62,15 +63,22 @@ import { SITE_TITLE } from '../consts';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
+	.hamburger {
+		display: none;
+		cursor: pointer;
+		background: none;
+		border: none;
+		color: var(--black);
+		padding: 0.5em;
 	}
 	.mobile-logo {
 		display: none;
 	}
-	@media (max-width: 1000px) {
-		.social-links {
+	@media (max-width: 720px) {
+		.hamburger {
+			display: block;
+		}
+		.social-links-wrapper {
 			display: none;
 		}
 		.desktop-title {
@@ -80,6 +88,25 @@ import { SITE_TITLE } from '../consts';
 			display: block;
 			height: 4rem;
 			width: auto;
+		}
+		nav {
+			position: relative;
+			flex-wrap: wrap;
+		}
+		.internal-links {
+			display: none;
+			width: 100%;
+			background: white;
+			box-shadow: 0 4px 8px rgba(var(--black), 10%);
+			flex-direction: column;
+		}
+		/* Show menu when hamburger is expanded */
+		nav:has(.hamburger[aria-expanded="true"]) .internal-links {
+			display: flex;
+		}
+		nav a {
+			padding: 1em;
+			border-bottom: 1px solid rgba(var(--gray-light), 50%);
 		}
 	}
 </style>

@@ -4,10 +4,39 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
 import ImagePath from "../components/ImagePath.astro";
-import { Vimeo } from 'astro-embed';
-
-const flyer = '/src/assets/2025_trick_or_streets_flyer.png';
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="homescreen">
+
+        <h1>SUPPORT THE AUSTIN STREET OPEN STREET!</h1>
+
+        <span>After the success of <a href="/news/hurray-for-austin-day/">Austin Day</a> and Trick or Streets last year, we are, once again, advocating for an Open Street on Austin Street!
+          This year we are aiming for four (4) Sundays in August and September. Support this intiative by signing our petition below!</span>
+
+        <a href="https://forms.gle/BB9hRiiaqmYLXuyV7" target="_blank">
+          <button> Sign the Petition for an Austin Street Open Street! </button>
+        </a>
+
+        <span>Want to stay up to date on our efforts?</span>
+        <a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">
+          <button> Sign up for our mailing list! </button>
+        </a>
+
+        <i><p>Neighbors for Safer Austin Street is a volunteer-led, local advocacy organization advocating for a safer, better, more sustainable, vibrant, and pedestrian-friendly Austin Street in Forest Hills</p></i>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
 <style>
 	.homescreen {
 		display: flex;
@@ -33,33 +62,3 @@ const flyer = '/src/assets/2025_trick_or_streets_flyer.png';
 		background-color: var(--accent-dark);
 	}
 </style>
-
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<div class="homescreen">
-
-		<span>We're looking for volunteers for October 31st!</span>
-		<a href="https://forms.gle/Grcpgy4yPEPYLpTH7">
-			<button>Sign up to volunteer at our Trick or Street event!</button>
-		</a>
-
-		<ImagePath width={720} height={360} imagePath={flyer} altText="" />
-
-
-        <span>Want to stay up to date on our efforts?</span> 
-				<a href="https://forms.gle/EdSW5TnG5BU2Ftxc6" target="_blank">
-					<button> Sign up for our mailing list! </button>
-				</a>
-
-        <i><p>Neighbors for Safer Austin Street is a volunteer-led, local advocacy organization advocating for a safer, better, more sustainable, vibrant, and pedestrian-friendly Austin Street in Forest Hills</p></i>
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>

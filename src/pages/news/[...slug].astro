@@ -4,13 +4,13 @@ import BlogPost from '../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('news');
+  const posts = await getCollection('news');
   return posts.filter(
     (post) => post.data.isPublished
   ).map((post) => ({
     params: { slug: post.data.slug || post.id },
-		props: post,
-	}));
+    props: post,
+  }));
 }
 type Props = CollectionEntry<'news'>;
 
@@ -19,5 +19,5 @@ const { Content } = await render(post);
 ---
 
 <BlogPost {...post.data}>
-	<Content />
+  <Content />
 </BlogPost>
