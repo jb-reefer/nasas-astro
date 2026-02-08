@@ -1,0 +1,31 @@
+---
+const { href, target = "_blank" } = Astro.props;
+---
+<a href={href} target={target} class="cta-button">
+  <slot />
+</a>
+
+<style>
+  .cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 4rem;
+    width: 20rem;
+    font-size: 1rem;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adding a subtle shadow for "wow" factor */
+  }
+  .cta-button:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-2px); /* Adding a subtle lift effect */
+  }
+</style>

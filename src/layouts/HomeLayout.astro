@@ -1,0 +1,34 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../consts";
+
+const { title = SITE_TITLE } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="homescreen">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+	.homescreen {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 2rem;
+	}
+</style>
