@@ -4,20 +4,22 @@ title: History and Campaigns
 ---
 
 - 2022
-  - A handwritten and an [online petition](https://www.change.org/ASaferAustinStreet) are started by Neighbors for A Safer Austin Street (NASAS) asking the city to study a pedestrian-first Austin Street.
-  - NASAS starts doing street canvassing and collects over 1000 signatures.
-  - A business petition is also started, gathering over 20 signatures.
+    - A handwritten and an [online petition](https://www.change.org/ASaferAustinStreet) are started by Neighbors for A Safer Austin Street (NASAS) asking the city to study a pedestrian-first Austin Street.
+    - NASAS starts doing street canvassing and collects over 1000 signatures.
+    - A business petition is also started, gathering over 20 signatures.
 - 2023
-  - NASAS presents to the Queens Community Board 6 Transportation Committee, and they request that the city look into it.
-  - Councilmember Lynn Schulman sends a letter to the NYC Department of Transportation (DOT) requesting a "pedestrian safety study" of Austin Street.
-  - The city, via DOT, starts street canvassing. They conducted an [Austin Street survey](https://www.surveymonkey.com/r/AUSTINST?sm=GtO_2Bf11zXyuabB8CYM898ZEPgD4HDWITW1j_2FxCOyGiI_3D) among the community. They promise to do business outreach next.
+    - NASAS presents to the Queens Community Board 6 Transportation Committee, and they request that the city look into it.
+    - Councilmember Lynn Schulman sends a letter to the NYC Department of Transportation (DOT) requesting a "pedestrian safety study" of Austin Street.
+    - The city, via DOT, starts street canvassing. They conducted an [Austin Street survey](https://www.surveymonkey.com/r/AUSTINST?sm=GtO_2Bf11zXyuabB8CYM898ZEPgD4HDWITW1j_2FxCOyGiI_3D) among the community. They promise to do business outreach next.
 - 2024
-  - A year goes by, and DOT does nothing.
+    - A year goes by, and DOT does nothing.
 - 2025
-  - Tired of waiting, NASAS starts an application for an Open Street on Austin Street.
-  - The application is denied, with vague reasoning. But the city grants us a one-day permit for the [Austin Day Open Street trial](#austin-day-open-street-trial)
-  - In the summer, the MTA removes the Q23 from Austin Street.
-  - [Understanding that Halloween day is the most dangerous day of the year for children](https://www.redcross.org/local/utah/about-us/news-and-events/press-releases/halloweensafetyut2023.html?srsltid=AfmBOopg1wD9eDZqUaO-NTnqf8lLH-OiIJgh79YZVnelgRdWnZ7-dIbw), NASAS decided to use the experience from the successful Austin Day to bring, for the first time, [Trick or Streets](#trick-or-streets-on-austin-street) to Austin Street.
+	- Tired of waiting, NASAS starts an application for an Open Street on Austin Street.
+	- The application is denied, with vague reasoning. But the city grants us a one-day permit for the [Austin Day Open Street trial](#austin-day-open-street-trial)
+	- In the summer, the MTA removes the Q23 from Austin Street.
+	- [Understanding that Halloween day is the most dangerous day of the year for children](https://www.redcross.org/local/utah/about-us/news-and-events/press-releases/halloweensafetyut2023.html?srsltid=AfmBOopg1wD9eDZqUaO-NTnqf8lLH-OiIJgh79YZVnelgRdWnZ7-dIbw), NASAS decided to use the experience from the successful Austin Day to bring, for the first time, [Trick or Streets](#trick-or-streets-on-austin-street) to Austin Street.
+- 2026
+	- Following up on the success of the previous year, NASAS re-applied for an Open Street on Austin Street.
 
 ---
 
