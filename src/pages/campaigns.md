@@ -20,6 +20,8 @@ title: History and Campaigns
 	- [Understanding that Halloween day is the most dangerous day of the year for children](https://www.redcross.org/local/utah/about-us/news-and-events/press-releases/halloweensafetyut2023.html?srsltid=AfmBOopg1wD9eDZqUaO-NTnqf8lLH-OiIJgh79YZVnelgRdWnZ7-dIbw), NASAS decided to use the experience from the successful Austin Day to bring, for the first time, [Trick or Streets](#trick-or-streets-on-austin-street) to Austin Street.
 - 2026
 	- Following up on the success of the previous year, NASAS re-applied for an Open Street on Austin Street.
+	- The first season of the Austin Street Open Street [was a big success](https://www.instagram.com/p/Dc9t6jDxnOX/)!
+	- Austin Street was selected by the city as the location for [Queens' Signature Event](https://www.nyc.gov/main/events/?permalinkName=trick-or-streets-austin-street-open-street&id=1291216&sequence=1&)!
 
 ---
 
